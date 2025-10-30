@@ -5,7 +5,9 @@ public class PartTimeEmployee extends Employee{
         super(name, ratePerHour, hoursWorked);
     }
 
+	@Override
     double calculatePay() {
         return ratePerHour * hoursWorked;
     }
 }
+
