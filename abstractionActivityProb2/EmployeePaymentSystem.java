@@ -20,12 +20,11 @@ public class EmployeePaymentSystem {
         double rate = sc.nextDouble();
         int hours = sc.nextInt();
 
-        Employee emp = (type.equals("full")) 
-            ? new FullTimeEmployee(name, rate, hours)
-            : new PartTimeEmployee(name, rate, hours);
+        Employee emp = (type.equals("full")) ? new FullTimeEmployee(name, rate, hours) : new PartTimeEmployee(name, rate, hours);
 
         System.out.printf("Pay: %.2f%n", emp.calculatePay());
         
         sc.close();
 	}
 }
+
