@@ -12,13 +12,17 @@ public class StudentGradingSystem {
 		System.out.println("Output: \n");
 		
 		Scanner sc = new Scanner(System.in);
-        System.out.print("Enter 3 grades: ");
-        double[] grades = new double[3];
-        for (int i = 0; i < 3; i++) grades[i] = sc.nextDouble();
-
-        GradingSystem gs = new StudentGrading();
-        System.out.println("Average = " + gs.calculateAverage(grades));
-        
-        sc.close();
+		System.out.print("Enter 3 grades: ");
+		
+		double[] grades = new double[3];
+		for (int i = 0; i < 3; i++) {
+			grades[i] = sc.nextDouble();
+		}
+		
+		GradingSystem gs = new StudentGrading();
+		System.out.println("Average = " + gs.calculateAverage(grades));
+     
+		sc.close();
 	}
 }
+
